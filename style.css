@@ -1,0 +1,143 @@
+ body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        #main-event-add-container,
+        #all-events-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            margin-bottom: 30px;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+
+        form input:focus,
+        form select:focus,
+        form textarea:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102,126,234,0.6);
+        }
+
+        textarea {
+            resize: none; /* textarea resize disabled */
+            height: 80px;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        button:active {
+            transform: scale(0.96);
+        }
+
+        #bttn-container {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .event-card {
+            background: #f7f7ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            position: relative;
+            animation: slideUp 0.5s ease;
+        }
+
+        .event-card h4 {
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+
+        .event-card span {
+            font-size: 13px;
+            color: #555;
+        }
+
+        .event-card p {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        #dltevent {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff4d4d;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            font-size: 14px;
+            padding: 0;
+        }
+
+        #dltevent:hover {
+            background: #e63939;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
